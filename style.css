@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: rgb(167, 164, 164);
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    position: relative;
+    padding: 2rem;
+    min-height: 75vh;
+    width: 30vw;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+    overflow: hidden;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(back3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+#msg {
+    font-size: 2rem;
+    border-bottom: 2px solid white;
+    color: rgb(255, 235, 215);
+    font-family: "Marhey";
+    font-weight: 700;
+}
+
+#input {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btns {
+    margin: 2rem;
+}
+
+#btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: chartreuse;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    font-weight: 550;
+    border-radius: 10px;
+}
+
+#restart-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    background-color: lightsalmon;
+    border: none;
+    cursor: pointer;
+    font-weight: 550;
+    border-radius: 10px;
+}
+
+#attempt,
+#para,
+#attempt-para {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 900;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface {
+    background-image: url(back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    min-height: 75vh;
+    width: 25vw;
+    text-align: center;
+}
+
+#intro {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+span {
+    font-family: "Micro 5", sans-serif;
+    font-size: 3.5rem;
+    color: rgb(255, 89, 0);
+}
+
+#about {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 15px;
+    font-family: "Rubik Bubbles", system-ui;
+}
+
+#strt {
+    text-decoration: none;
+    font-size: 1.3em;
+    color: black;
+    background-color: rgb(40, 211, 40);
+    border: none;
+    color: rgb(21, 0, 255);
+    padding: 10px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.second{
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .interface {
+        width: 90vw; 
+        height: auto;
+        padding: 1rem; 
+    }
+
+    #intro {
+        font-size: 1.5em; 
+    }
+
+    span {
+        font-size: 2em;
+    }
+
+    #about {
+        font-size: 1.8rem;
+        font-family: "Marhey";
+        padding: 10px; 
+    }
+
+    #strt {
+        font-size: 1.2em;
+        font-weight: 800;
+        padding: 10px; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 90vw; 
+        height: auto;
+        padding: 1rem; 
+    }
+
+    #msg {
+        font-size: 2rem;
+    }
+
+    #input {
+        font-size: 1rem;
+        margin-top: 1rem; 
+        padding: 10px; 
+    }
+
+    .btns {
+        margin: 1rem;
+    }
+
+    #btn,
+    #restart-btn {
+        margin-top: 20px;
+        font-size: 1rem;
+        padding: 8px 16px; 
+    }
+
+    #attempt,
+    #para,
+    #attempt-para {
+        margin: 40px;
+        font-size: 1.2rem;
+    }
+}
